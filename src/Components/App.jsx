@@ -9,19 +9,34 @@ const App = (props) => {
       <h1>Hello!</h1>
       <nav>
         <p>
-          <Link to='/'>Go to BLUE</Link>
+          <Link to='/'>
+            Go to BLUE
+          </Link>
         </p>
         <p>
-          <Link to='/red'>Go to RED</Link>
+          <Link to='/red'>
+            Go to RED
+            </Link>
         </p>
         <p>
-          <Link to='/red/yellow'>Go to YELLOW</Link>
+          <Link to='/red/yellow'>
+            Go to YELLOW
+          </Link>
         </p>
       </nav>
       <Routes>
-        <Route path="/" element={ <Blue /> }/>
-        <Route path="/red" element={ <Red /> }/>
-        <Route path="/red/yellow" element={ <Yellow/> }/>
+        <Route 
+          path="/" 
+          element={<Blue />}
+        />
+        <Route 
+          path="/red" 
+          element={<Red />}
+        />
+        <Route 
+          path="/red/yellow" 
+          element={<Yellow/>}
+        />
       </Routes>
     </BrowserRouter>
   );
